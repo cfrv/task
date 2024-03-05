@@ -1,52 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+a {
+  
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  font-style: inherit;
+  color: black;
+}
+
+
  
-  .sec1{
-    display: flex;
-     justify-content: space-between;
-     }
-.sec2{
-        display: flex;
-        flex-direction: row;
-          
-         }
-     h1{
-        width: 365px; 
-         height: 93px;
-         font-family:Roboto Slab ;
-          weight:700px;
-         font-size: 55px;
- 
- 
-        }
-        header{
-            
-            margin-left: 124px;
-        }
-  div{
-    width:662px;
-    height: 374px;
-    
-   margin-left:124px ;
-    
+
+main{
+  padding: 56px 36px;
+}
+main h1.header{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 60.36px;
+}
+
+main section.sec1{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main section.sec1 div p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+main section.sec1 img{
+  width: 170px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+main section.sec2{
+  display: flex;
+  width: 100%;
+  margin-top: 45px;
+}
+
+main section.sec2 ul{
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+main section.sec2 ul li{
+  min-width: 87px;
+  width: 87px;
+  flex-shrink: 1;
+}
+
+main section.sec2 ul li h3{
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 700;
+}
+
+main section.sec2 ul li p{
+  font-size: 10px;
+  line-height: 15.6px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+main section.sec2 img{
+  display: none;
+}
+
+@media (min-width: 840px){
+  main{
+      padding: 56px 72px;
   }
-  p{
+
+  main h1.header{
+      font-size: 32px;
+      line-height: 50.44px;
+  }
+  
+  main section.sec1{
+      margin-top: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  main section.sec1 div{
+      width: 383px;
+  }
+  
+  main section.sec1 div p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+  }
+  
+  main section.sec1 img{
+      width: 182px;
+      height: 182px;
+      margin-top: 0px;
+  }
+  
+  main section.sec2{
+      margin-top: 70px;
+  }
+  
+  main section.sec2 ul{
+      gap: 55px;
+  }
+  
+  main section.sec2 ul li{
+      min-width: 108px;
+      width: 108px;
+  }
+  
+  main section.sec2 ul li h3{
+      font-size: 15px;
+      line-height: 19.6px;
+      font-weight: 700;
+  }
+  
+  main section.sec2 ul li p{
+      font-size: 11px;
+      line-height: 14.6px;
+      font-weight: 400;
+      margin-top: 2px;
+  }
+
+}
+
+@media (min-width: 1440px){
+  main{
+      padding: 91px 124px;
+  }
+  
+  main h1.header{
+      font-size: 55px;
+      line-height: 70.44px;
+  }
+
+  main section.sec1{
+      margin-top: 50px;
+  }
+  
+
+  main section.sec1 div{
+      width: 662px;
+  }
+  
+  main section.sec1 div p{
+      font-weight: 400;
       font-size: 24px;
-    font-family: Roboto;
-     
-    }
-  .photo1 {
-width: 314px;
-height: 315px;
+      line-height: 36px;
+  }
+  
+  main section.sec1 img{
+      width: 315px;
+      height: 315px;
+  }
+  
+  main section.sec2{
+      margin-top: 90px;
+      align-items: center;
+  }
+  
+  main section.sec2 ul{
+      gap: 95px;
+      flex-wrap: nowrap;
+      margin-left: 132px;
+  }
+  
+  main section.sec2 ul li{
+      min-width: 150px;
+      width: 150px;
+  }
+  
+  main section.sec2 ul li h3{
+      font-size: 25px;
+      line-height: 32.6px;
+  }
+  
+  main section.sec2 ul li p{
+      font-size: 18px;
+      line-height: 23.6px;
+      margin-top: 2px;
+  }
+  main section.sec2 img{
+      display: inline-block;
+      
+  }
+}
  
- }
- .photo2{
-    margin-left:124px ;
- }
- ul{
-    list-style: none;
- }
-  h2{
-    font-size: 25px;
-  }
-  .par1{
-    font-size: 18px;
-  }
+   
